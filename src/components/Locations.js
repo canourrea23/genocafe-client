@@ -27,7 +27,7 @@ const Locations = () => {
                 <li>Villa del Mar</li>
             </ul>
             <div>
-                <h3>Ventas en EEUU. Tenemos los segients represantes...</h3>
+                <h3>Ventas en America del Norte Tenemos los segients represantes...</h3>
                 <ul>
                     <li>Harold Sierra T - Bougoumou, Quebec</li>
                     <li>Masoumeh's Cofee - La Feria, Texas</li>

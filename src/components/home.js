@@ -1,4 +1,4 @@
-// navbar  
+// navbar
 
 // body
 // GENOCAFÉ
@@ -7,3 +7,14 @@
 // email signup for notifications
 
 // footer
+const Home = () => {
+  return (
+    <div>
+      <img
+        src={process.env.PUBLIC_URL + "/logo-animation-white.gif"}
+        alt="logo"
+      ></img>
+    </div>
+  );
+};
+export default Home;

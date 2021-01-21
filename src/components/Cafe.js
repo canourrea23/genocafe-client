@@ -1,39 +1,77 @@
-import React from 'react';
-import {Radar} from 'react-chartjs-2';
+import React from "react";
+import { Radar } from "react-chartjs-2";
+import { Row, Container, Col } from "react-bootstrap";
 
 const data = {
-  labels: ['Frangencia/Aroma', 'Sabor', 'Sabor Residual', 'Acidez', 'Cuerpo', 'Balance', 'Puntaje del Catador'],
+  labels: [
+    "Frangencia/Aroma",
+    "Sabor",
+    "Sabor Residual",
+    "Acidez",
+    "Cuerpo",
+    "Balance",
+    "Puntaje del Catador",
+  ],
   datasets: [
     {
-      label: 'Análisis Sensorial Utilizando la Escala Q-Grader',
-      backgroundColor: 'rgba(179,181,198,0.2)',
-      borderColor: 'rgba(179,181,198,1)',
-      pointBackgroundColor: 'rgba(179,181,198,1)',
-      pointBorderColor: '#fff',
-      pointHoverBackgroundColor: '#fff',
-      pointHoverBorderColor: 'rgba(179,181,198,1)',
-      data: [8.5, 8.75, 8.5, 8.5, 8.75, 8.5, 8.5]
+      label: "Análisis Sensorial Utilizando la Escala Q-Grader",
+      backgroundColor: "rgba(179,181,198,0.2)",
+      borderColor: "rgba(179,181,198,1)",
+      pointBackgroundColor: "rgba(179,181,198,1)",
+      pointBorderColor: "#fff",
+      pointHoverBackgroundColor: "#fff",
+      pointHoverBorderColor: "rgba(179,181,198,1)",
+      data: [8.5, 8.75, 8.5, 8.5, 8.75, 8.5, 8.5],
     },
-    // {
-    //   label: 'My Second dataset',
-    //   backgroundColor: 'rgba(255,99,132,0.2)',
-    //   borderColor: 'rgba(255,99,132,1)',
-    //   pointBackgroundColor: 'rgba(255,99,132,1)',
-    //   pointBorderColor: '#fff',
-    //   pointHoverBackgroundColor: '#fff',
-    //   pointHoverBorderColor: 'rgba(255,99,132,1)',
-    //   data: [28, 48, 40, 19, 96, 27, 100]
-    // }
-  ]
+  ],
+};
+//  ticks: { beginAtZero: true },
+const options = {
+  scale: {
+    ticks: {
+      min: 6,
+      max: 10,
+    },
+  },
 };
 
-const Cafe = () => { 
-    return (
+const Cafe = () => {
+  return (
+    <Container>
+      {/* <Row>
+        <Col>1 of 3</Col>
+        <Col xs={6}>2 of 3 (wider)</Col>
+        <Col>3 of 3</Col>
+      </Row>
+      <Row>
+        <Col>1 of 3</Col>
+        <Col xs={5}>2 of 3 (wider)</Col>
+        <Col>3 of 3</Col>
+      </Row> */}
+      <Row>
+        <Col xs={5}>
+          <img
+            className="cafe"
+            src="/Asset/black-label-500g.jpg"
+            alt="blacklabel"
+          ></img>
+        </Col>
+        <Col className="discription">
+          <span>
+            Café especial de origen Supremo. Molido, Tostion media.
+            Presentaciones 500 g y 250 g. Café por encima de 86 puntos en escala
+            SCAA. Análisis sensorial balanceado, con fragancia floral, gran
+            cuerpo, acidez a limoncillo, notas a jazmín, caramelo, durazno y
+            sabor residual a canela. Taza limpia.
+          </span>
+        </Col>
+      </Row>
       <div>
-        <h3>Especial de Origen. Grano 500 g;  250 g y 2,500 g</h3>
-        <Radar data={data} />
+        <h3>Especial de Origen. Grano 500 g; 250 g y 2,500 g</h3>
+        <Radar data={data} options={options} />
       </div>
-    );
-  };
+    </Container>
+  );
+};
 
 export default Cafe;

@@ -19,3 +19,20 @@ body {
   padding: 0%;
 
 }
+.certificados{
+  height: 6%;
+  width: 18%;
+  padding-right: 10px;
+}
+.cafe{
+  height: 400px;
+  padding: 0%;
+  margin-bottom: 10%;
+}
+.discription{
+    padding-left: 0px;
+    margin-top: 80px;
+    padding-right: 20px;
+    text-align: center;
+
+}
