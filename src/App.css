@@ -33,6 +33,62 @@ body {
     padding-left: 0px;
     margin-top: 80px;
     padding-right: 20px;
-    text-align: center;
+    margin: auto;
+}
+.product-name{
+  text-align: center ;
+}
+/* *{
+  border: 1px solid red;
+} */
+.mision{
+  margin: auto;
+}
+.vision{
+  margin: auto;
+}
 
+.carousel {
+  box-sizing: border-box;
+  width:900px;
+  height:400px;
+  margin: auto;
+}
+.carousel img { 
+   margin: auto;
+   width: 400px;
+   height: 400px;
+  }
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  /* outline: black; */
+  background-size: 100%, 100%;
+  /* border-radius: 50%; */
+  /* border: 1px solid black; */
+  background-image: none;
+}
+
+.carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 30px;
+  color: gray;
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 30px;
+  color: gray;
+}
+.card-img-top{
+  height: 310px;
+  width: 250px;
+}
+body{
+  background-color: #B29A86;
+}
+.card{
+  height: 550px;
+  width: 520px; 
 }

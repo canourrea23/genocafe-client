@@ -16,6 +16,8 @@ const Footer = () => {
         <span className="text-muted">
           @2021 Genocafé, el mejor comienzo | Todos Derechos Reservado
         </span>
+        ||
+        <span className="text-muted">CONTACTENOS: </span>
       </div>
     </footer>
   );

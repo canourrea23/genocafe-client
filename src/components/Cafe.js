@@ -38,16 +38,9 @@ const options = {
 const Cafe = () => {
   return (
     <Container>
-      {/* <Row>
-        <Col>1 of 3</Col>
-        <Col xs={6}>2 of 3 (wider)</Col>
-        <Col>3 of 3</Col>
-      </Row>
-      <Row>
-        <Col>1 of 3</Col>
-        <Col xs={5}>2 of 3 (wider)</Col>
-        <Col>3 of 3</Col>
-      </Row> */}
+      <div className="product-name">
+        <h3>Especial de Origen. Grano 500 g y 250 g</h3>
+      </div>
       <Row>
         <Col xs={5}>
           <img
@@ -57,17 +50,18 @@ const Cafe = () => {
           ></img>
         </Col>
         <Col className="discription">
-          <span>
-            Café especial de origen Supremo. Molido, Tostion media.
-            Presentaciones 500 g y 250 g. Café por encima de 86 puntos en escala
-            SCAA. Análisis sensorial balanceado, con fragancia floral, gran
-            cuerpo, acidez a limoncillo, notas a jazmín, caramelo, durazno y
-            sabor residual a canela. Taza limpia.
-          </span>
+          <div>
+            <span>
+              Café especial de origen Supremo. Molido, Tostion media.
+              Presentaciones 500 g y 250 g. Café por encima de 86 puntos en
+              escala SCAA. Análisis sensorial balanceado, con fragancia floral,
+              gran cuerpo, acidez a limoncillo, notas a jazmín, caramelo,
+              durazno y sabor residual a canela. Taza limpia.
+            </span>
+          </div>
         </Col>
       </Row>
       <div>
-        <h3>Especial de Origen. Grano 500 g; 250 g y 2,500 g</h3>
         <Radar data={data} options={options} />
       </div>
     </Container>
