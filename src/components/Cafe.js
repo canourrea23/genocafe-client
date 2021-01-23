@@ -42,10 +42,10 @@ const Cafe = () => {
         <h3>Especial de Origen. Grano 500 g y 250 g</h3>
       </div>
       <Row>
-        <Col xs={5}>
+        <Col xs={6}>
           <img
             className="cafe"
-            src="/Asset/black-label-500g.jpg"
+            src="/Asset/blanco-tradiccional.png"
             alt="blacklabel"
           ></img>
         </Col>
