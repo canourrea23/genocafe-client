@@ -17,8 +17,8 @@ import History from "./components/History";
 import About from "./components/About";
 import Cafe from "./components/Cafe";
 import Locations from "./components/Locations";
-import Home from "./components/Home";
 import Producto from "./components/Producto";
+import Home from "./components/Home";
 import Blog from "./components/Blog";
 import Signup from "./components/Signup";
 
