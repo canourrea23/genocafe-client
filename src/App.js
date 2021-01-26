@@ -1,5 +1,5 @@
 // Imports
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, Component } from "react";
 import {
   Route,
   Switch,
@@ -19,8 +19,12 @@ import Cafe from "./components/Cafe";
 import Locations from "./components/Locations";
 import Home from "./components/Home";
 import Producto from "./components/Producto";
+import Blog from "./components/Blog";
+import Signup from "./components/Signup";
+
 
 function App() {
+  
   // Set state values
   return (
     <Router>
@@ -29,11 +33,13 @@ function App() {
         <div className="container mt-5">
           <Switch>
             <Route exact path="/" component={Home} />
-            <Route path="/Cafe" component={Cafe} />
+            <Route path="/Cafe/:id" component={Cafe} />
             <Route path="/Locations" component={Locations} />
             <Route path="/About" component={About} />
             <Route path="/History" component={History} />
             <Route path="/Producto" component={Producto} />
+            <Route path="/Blog" component={Blog} />
+            <Route path="/Signup" component={Signup} />
           </Switch>
         </div>
         <Footer />

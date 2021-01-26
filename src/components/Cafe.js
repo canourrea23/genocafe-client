@@ -1,6 +1,7 @@
-import React from "react";
 import { Radar } from "react-chartjs-2";
 import { Row, Container, Col } from "react-bootstrap";
+import React, { useState, useEffect } from "react";
+import axios from "axios";
 
 const data = {
   labels: [
@@ -35,29 +36,37 @@ const options = {
   },
 };
 
-const Cafe = () => {
+const Cafe = (props) => {
+  const [product, setProduct] = useState({
+    name: "",
+    description: "",
+    image: "",
+  });
+  const getProduct = async () => {
+    const { id } = props.match.params;
+    try {
+      const res = await axios.get(`/api/products/${id}`);
+      setProduct(res.data);
+    } catch (error) {
+      console.log(error);
+    }
+  };
+  useEffect(() => {
+    getProduct();
+  }, []);
+
   return (
     <Container>
       <div className="product-name">
-        <h3>Especial de Origen. Grano 500 g y 250 g</h3>
+        <h3>{product.name}</h3>
       </div>
       <Row>
         <Col xs={6}>
-          <img
-            className="cafe"
-            src="/Asset/blanco-tradiccional.png"
-            alt="blacklabel"
-          ></img>
+          <img className="cafe" src={product.image} alt="blacklabel"></img>
         </Col>
         <Col className="discription">
           <div>
-            <span>
-              Café especial de origen Supremo. Molido, Tostion media.
-              Presentaciones 500 g y 250 g. Café por encima de 86 puntos en
-              escala SCAA. Análisis sensorial balanceado, con fragancia floral,
-              gran cuerpo, acidez a limoncillo, notas a jazmín, caramelo,
-              durazno y sabor residual a canela. Taza limpia.
-            </span>
+            <span>{product.description}</span>
           </div>
         </Col>
       </Row>

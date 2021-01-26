@@ -18,7 +18,7 @@ const Producto = () => {
   useEffect(() => {
     getProducts();
   }, []);
-  
+
   return (
     <CardColumns>
       {products.map((product) => {
@@ -31,7 +31,7 @@ const Producto = () => {
             </Card.Body>
             <ListGroup className="list-group-flush"></ListGroup>
             <Card.Body>
-              <Card.Link href="/Cafe">Detallés</Card.Link>
+              <Card.Link href={`/Cafe/${product.id}`}>Detallés</Card.Link>
             </Card.Body>
           </Card>
         );

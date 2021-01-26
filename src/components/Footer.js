@@ -19,6 +19,9 @@ const Footer = () => {
         ||
         <span className="text-muted">
           CONTACTENOS:{" "}
+          {/* <address>
+            <a href="info@genocafe.com">Send email</a>
+          </address> */}
           <a
             href="https://www.facebook.com/fabiourreaarias"
             className="facebook"
@@ -64,7 +67,7 @@ const Footer = () => {
         </span>
         {/* <div className="container"> */}
         {/* carolina */}
-        <h6>
+        <h6 className="carolina text-muted">
           {" "}
           Diseño y Desarrollo
           <span>

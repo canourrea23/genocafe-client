@@ -10,9 +10,8 @@ body {
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 60px; /* Set the fixed height of the footer here */
+  height: 90px; /* Set the fixed height of the footer here */
   line-height: 60px; /* Vertically center the text there */
-
 }
 .logo{
   padding: 0%;
@@ -69,7 +68,6 @@ body {
   /* border: 1px solid black; */
   background-image: none;
 }
-
 .carousel-control-next-icon:after
 {
   content: '>';
@@ -103,10 +101,16 @@ body {
   }
   .facebook{
     color: rgb(16, 103, 232);
+    padding: 5px;
   }
     .twitter{
-    color: rgb(29, 140, 237)
+    color: rgb(29, 140, 237);
+     padding: 5px;
   }
      .instagram{
-    color:rgb(180, 26, 152)
+    color:rgb(180, 26, 152);
+     padding: 5px;
+  }
+  .carolina{
+    margin-left: -110px;
   }
