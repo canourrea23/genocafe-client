@@ -3,8 +3,8 @@ import Card from "react-bootstrap/Card";
 import CardColumns from "react-bootstrap/CardColumns";
 import { ListGroup, ListGroupItem } from "react-bootstrap";
 import React, { useState, useEffect } from "react";
-// import axios from "axios";
-import axios from "../../axios-common.js";
+import axios from "axios";
+
 
 const Producto = () => {
   const [products, setProducts] = useState([]);

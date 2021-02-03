@@ -4,7 +4,8 @@ html {
 }
 body {
   margin-bottom: 75px; /* Margin bottom by footer height */
-   background-color: #B29A86
+  background-color: #B29A86;
+  padding-bottom: 20px;
 }
 .footer {
   position: absolute;
