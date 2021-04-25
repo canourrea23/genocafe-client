@@ -4,13 +4,14 @@ import CardColumns from "react-bootstrap/CardColumns";
 import { ListGroup, ListGroupItem } from "react-bootstrap";
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import network from "../utils/network"
 
 
 const Producto = () => {
   const [products, setProducts] = useState([]);
   const getProducts = async () => {
     try {
-      const res = await axios.get("/api/products");
+      const res = await axios.get(`${network()}/api/products`);
       setProducts(res.data);
     } catch (error) {
       console.log(error);
