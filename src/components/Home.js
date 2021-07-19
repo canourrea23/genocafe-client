@@ -11,7 +11,17 @@ import Carousel from "react-bootstrap/Carousel";
 const Home = () => {
   return (
     <div>
-      <h5>BIENVENIDO, DISFRUTE DE UN CAFÉ GENUINAMENTE QUINDIANO</h5>
+      <section id="hero-image">
+        {/* <img className="hero-image" src='/Asset/hero-img.jpeg' alt="heroImage"></img> */}
+        {/* <img
+        className="hero-image"
+        src="https://res.cloudinary.com/genocafe/image/upload/v1611587930/B6CB234D-C99E-4D32-AEAF-58BC4255CF80_wkgmcz.jpg"
+        alt="heroImage"
+      ></img> */}
+        <h4 style={{ textAlign: "center" }}>
+          BIENVENIDO, DISFRUTE DE UN CAFÉ<br></br> GENUINAMENTE QUINDIANO
+        </h4>
+      </section>
       <Carousel className="carsousel">
         <Carousel.Item interval={10000}>
           <img

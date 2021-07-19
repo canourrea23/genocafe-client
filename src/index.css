@@ -1,9 +1,14 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: var(--body-font);
 }
 ​
 .logout-link {
   cursor: pointer;
+}
+
+:root {
+  --body-font: 'Iosevka', sans-serif;
+  /* Iosevka fixed extralight */
 }
