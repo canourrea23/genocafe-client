@@ -7,7 +7,7 @@ import Carousel from "react-bootstrap/Carousel";
 //  Carousels
 // email signup for notifications
 
-// footer
+// this is the body of the page
 const Home = () => {
   return (
     <div>
