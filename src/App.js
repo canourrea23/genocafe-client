@@ -23,15 +23,14 @@ import Home from "./components/Home";
 import Blog from "./components/Blog";
 import Signup from "./components/Signup";
 
-
 function App() {
-  
   // Set state values
   return (
     <Router>
       <div className="App">
         <Navbar />
-        <div className="container mt-5">
+        <div>
+          {/* <div className="container mt-5"> */}
           <Switch>
             <Route exact path="/" component={Home} />
             <Route path="/Cafe/:id" component={Cafe} />

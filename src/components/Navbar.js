@@ -5,7 +5,7 @@ import { Switch, Route, Link } from "react-router-dom";
 const Navbar = (props) => {
   return (
     // <div className="navbar">
-    <BootstrapNavbar bg="dark" variant="dark">
+    <BootstrapNavbar className="navbar" bg="dark" variant="dark">
       <BootstrapNavbar.Brand as={Link} to="/">
         <img
           className="logo"
@@ -13,7 +13,7 @@ const Navbar = (props) => {
           alt="logo"
         ></img>
       </BootstrapNavbar.Brand>
-      <Nav className="mr-auto">
+      <Nav className="ml-auto">
         <Nav.Link as={Link} to="/Producto">
           Producto
         </Nav.Link>
