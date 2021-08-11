@@ -29,7 +29,7 @@ function App() {
     <Router>
       <div className="App">
         <Navbar />
-        <div>
+        <div className="bodySpacing">
           {/* <div className="container mt-5"> */}
           <Switch>
             <Route exact path="/" component={Home} />

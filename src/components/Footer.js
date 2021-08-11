@@ -28,8 +28,8 @@ const Footer = () => {
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
+              width="20"
+              height="20"
               fill="currentColor"
               class="bi bi-facebook"
               viewBox="0 0 16 16"
@@ -39,8 +39,8 @@ const Footer = () => {
             <a href="https://www.instagram.com/genocafe/" className="instagram">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
+                width="20"
+                height="20"
                 fill="currentColor"
                 class="bi bi-instagram"
                 viewBox="0 0 16 16"
@@ -53,8 +53,8 @@ const Footer = () => {
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
+                  width="20"
+                  height="20"
                   fill="currentColor"
                   class="bi bi-twitter"
                   viewBox="0 0 16 16"

@@ -12,6 +12,7 @@ const Home = () => {
   return (
     <div>
       <section id="hero-image">
+        
         {/* <img className="hero-image" src='/Asset/hero-img.jpeg' alt="heroImage"></img> */}
         {/* <img
         className="hero-image"
@@ -19,10 +20,39 @@ const Home = () => {
         alt="heroImage"
       ></img> */}
         <h4 style={{ textAlign: "center" }}>
-          BIENVENIDO, DISFRUTE DE UN CAFÉ<br></br> GENUINAMENTE QUINDIANO
+          BIENVENIDO, DISFRUTE DE UN CAFÉ<br></br>GENUINAMENTE QUINDIANO
         </h4>
       </section>
-      <Carousel className="carsousel">
+      {/* mission  card */}
+      <section id="mission-section">
+        <div nameClass="container-fluid">
+          <div nameClass="row">
+            <div nameClass="col-lg-10 offset-lg-1 col-lg-10 offset-lg-1 col-md-8 offset-md-2 ">
+              <div nameClass="about_box">
+                <div nameClass="row">
+                  <div nameClass="col-lg-6 col-md-12 large-100">
+                    <div nameClass="image_box">
+                      {/* <img
+                        src="https://res.cloudinary.com/genocafe/image/upload/v1611587120/4C40A3EA-67F3-4A93-B85E-C1662EF81193_nhsxsj.jpg"
+                        alt="cafe-intro"
+                        nameClass="mission-img" id="mission-img"
+                      /> */}
+                    </div>
+                  </div>
+                  <div nameClass="col-lg-6 col-md-12 infor_box">
+                    <h3>My Mission</h3>
+                    <p>
+                      Nuestro producto lleva una historia que ah sido cultivado
+                      con maticulaccion y passion por un producto bueno.{" "}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* <Carousel className="carsousel">
         <Carousel.Item interval={10000}>
           <img
             className="d-block w-20"
@@ -62,7 +92,7 @@ const Home = () => {
             alt="Third slide"
           />
         </Carousel.Item>
-      </Carousel>
+      </Carousel> */}
     </div>
   );
 };
