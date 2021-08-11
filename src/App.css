@@ -25,7 +25,7 @@ body {
 .certificados{
   height: 6%;
   width: 18%;
-  padding-right: 10px;
+  padding-right: 5px;
 }
 .cafe{
   height: 400px;
@@ -177,6 +177,9 @@ h4 {
 }
 .bodySpacing {
   padding-top: 100px;
-  padding-left: 150px;
+  /* padding-left: 150px; */
   /* background: red; */
+}
+.cards{
+  padding-left: 150px; 
 }
