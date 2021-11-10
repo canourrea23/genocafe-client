@@ -6,6 +6,7 @@ body {
   margin-bottom: 75px; /* Margin bottom by footer height */
   background-color: #B29A86;
   padding-bottom: 20px;
+  overflow-x: hidden;
 }
 .footer {
   background-image: url('https://res.cloudinary.com/genocafe/image/upload/v1636173377/coffee-background_g7iiez.jpg');
@@ -115,7 +116,7 @@ body {
 
 #hero-image {
   background-image: url(https://res.cloudinary.com/genocafe/image/upload/v1611587931/5FB4B64E-3DEE-4805-919D-478855BD785F_qijf9x.jpg);
-  opacity: .5;
+  opacity: .9;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -141,12 +142,12 @@ body {
 .nav-letters {
   color: rgba(255,255,0, 1);
 }
-h4 {
+.slogan {
   padding-top: 90%;
   padding-bottom: 0%;
-  text-shadow: 2px 2px #4B371C;
+  text-shadow: 3px 3px #A03000;
   font-size: 30px;
-  color: goldenrod;
+  color: rgba(255,253,0, 1);
 }
 #mission-img {
   height: 5%;
@@ -186,3 +187,9 @@ footer span, a {
     expand: 
   }
 } */
+
+.locales {
+  padding-top: 10%;
+  margin-left: 8%;
+  padding-bottom: 8%;
+}

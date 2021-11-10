@@ -2,8 +2,8 @@ import React from "react";
 
 const Locations = () => {
   return (
-    <div>
-      <h4>Puntos de venta</h4>
+    <div className='locales'>
+      <h5>Puntos de venta</h5>
       <ul>
         <li>Supermercado Laureles</li>
         <li>Supermercado La Gran Colombia</li>
@@ -35,7 +35,7 @@ const Locations = () => {
           <li>Masoumeh's Cofee - La Feria, Texas</li>
           <li>Carolina Urrea R - Los Angeles, California</li>
           <li>Isas Boutic - Orlando, Florida</li>
-          <li>Lina Urrea R - Charlot, South Carolina</li>
+          <li>Lina Urrea R - Charlotte, North Carolina</li>
           <li>Tinto Proyect - Manhattan, New York</li>
         </ul>
       </div>

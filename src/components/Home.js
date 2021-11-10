@@ -12,7 +12,8 @@ const Home = () => {
   return (
     <div>
       <section id="hero-image">
-        <h4 style={{ textAlign: "center" }}>
+        
+        <h4 className='slogan' style={{ textAlign: "center", opacity: '1' }}>
           BIENVENIDO, DISFRUTE DE UN CAFÉ<br></br>GENUINAMENTE QUINDIANO
         </h4>
       </section>

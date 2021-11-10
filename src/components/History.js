@@ -10,7 +10,7 @@ const History = () => {
   return (
     <Container>
       <div className="product-name">
-        <h4>Nuestra Historia</h4>
+        <h3>Nuestra Historia</h3>
         <Row>
           <Col xs={5}>
             <img
@@ -167,6 +167,4 @@ const History = () => {
     </Container>
   );
 };
-
 export default History;
-// continuation
